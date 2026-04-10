@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoreboard Debug Exercise</title>
+    <link rel="stylesheet" href="style1.css" />
+    <script href="script1.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <h1>Team Scoreboard</h1>
+
+      <div class="controls">
+        <input id="nameInput" type="text" placeholder="Player name" />
+        <input id="scoreInput" type="number" placeholder="Score" value="0" />
+        <select id="teamInput">
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+        </select>
+        <button id="addBtn">Add player</button>
+      </div>
+
+      <div class="controls">
+        <input id="searchInput" type="text" placeholder="Search players" />
+        <select id="filterInput">
+          <option value="all">All</option>
+          <option value="red">Red team</option>
+          <option value="blue">Blue team</option>
+          <option value="active">Active only</option>
+        </select>
+        <button id="sortBtn" class="gray">Sort by score</button>
+        <button id="resetBtn" class="gray">Reset scores</button>
+      </div>
+
+      <div class="stats">
+        <div>Total players: <strong id="totalPlayers">0</strong></div>
+        <div>Active players: <strong id="activePlayers">0</strong></div>
+        <div>Total score: <strong id="totalScore">0</strong></div>
+        <div>Top player: <strong id="topPlayer">-</strong></div>
+      </div>
+
+      <ul id="playerList"></ul>
+    </div>
+  </body>
+</html>
