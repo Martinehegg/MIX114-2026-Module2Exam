@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/detailpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Detailpage</title>
+</head>
+<body>
+    <!-- Navbar-->
+    <header>
+        <a href="listingpage.html"><div class="logo">
+          <img src="images/logo.png" alt="">
+        </div></a>
+        <nav>
+          <ul>
+            <li><a href="listingpage.html#karrierer-section">Alle karrierer</a></li>
+            <li><a href="comparingpage.html">Sammenlikne Karrierer</a></li>
+            <li><a href="">Min profil</a></li>
+          </ul>
+        </nav>
+        <div class="menu">
+          <button id="Meny">
+              Meny
+          </button>
+        </div>
+      </header>
+
+<!-- Hero-->
+ <section class="hero">
+    <img id="careerHeroImg" alt="">
+    <div class="detail-card">
+        <h1 id="careerTitle"></h1> 
+        <p id="careerLevel"></p>
+        <p id="careerFamily"></p>
+        <p id="careerDesc"></p>
+    </div>
+ </section>
+
+<!-- Buttons-->
+ <div class="buttons-detail">
+ <button>Legg denne karrieren til favoritter <img id="icon" src="images/icons/Favorite-icon.png" alt=""></button>
+ <a href="comparingpage.html"><button>Sammenlikn med andre karrierer <img id="icon" src="images/icons/Compare-icon.png" alt=""></button></a>
+ <button>Søk skoleplass her <img id="icon" src="images/icons/Search icon.png" alt=""></button>
+</div>
+
+<!-- Oversikt-->
+<section class="oversikt">
+    <div class="cards-oversikt">
+        <h2>Utdanning</h2>
+    </div>
+
+    <div class="cards-oversikt">
+        <h2>Arbeidsmarked Norge</h2>
+    </div>
+
+    <div class="cards-oversikt">
+        <h2>Økonomi</h2>
+    </div>
+
+    <div class="cards-oversikt">
+        <h2>Globalt perspektiv</h2>
+    </div>
+
+</section>
+
+<!-- Lønn og historie-->
+
+<h1 id="lonn-historie">Lønnsutvikling og historisk utvikling av karrieren</h1>
+<section class="historie">
+    <div id="salaryChart" class="lonn"></div>
+        <div class="utvikling">
+        <h3>Historisk utvikling</h3>
+        <p id="HistoryText"></p>
+    </div>
+</section>
+
+<!-- Vendepunkter og overganger-->
+ <section class="vendepunkter-overganger">
+    <div class="vendepunkter">
+        <h3>Vendepunkter</h3>
+        <p id="pivotalPoints"></p>
+    </div>
+
+    <div class="overganger">
+        <h3>Overganger (årlig)</h3>
+        <p id="careerTransitions"></p>
+    </div>
+
+ </section>
+
+<!-- Reviews-->
+ <section class="reviews">
+    
+    <div class="score">
+    <h1>Reviews</h1>
+    <div id="reviewsList"></div>
+    </div>
+
+  
+    <div class="tilfredshet">
+    <h1>Tilfredshet</h1>
+        <p id="satisfactionInfo"></p>
+    </div>
+
+ </section>
+
+<!-- Forslag til karrierevei-->
+
+<h1 id="karriereforslag">Forslag til karrierevei som Siviløkonom</h1>
+<section class="karrierevei">
+
+    <div>
+        <ul>
+            <li>VG1 Studiespesialisering (eller tilsvarende)</li>
+            <li><img class="arrow" src="images/icons/arrow.png" alt=""></li>
+            <li>VG2 Studiespesialisering - Matematikk (S1/S2 eller R1) anbefales</li>
+            <li><img class="arrow" src="images/icons/arrow.png" alt=""></li>
+            <li>VG3 Studiespesialisering</li>
+            <li><img class="arrow" src="images/icons/arrow.png" alt=""></li>
+            <li>Bachelor i økonomi og administrasjon (3 år)</li>
+            <li><img class="arrow" src="images/icons/arrow.png" alt=""></li>
+            <li>Master i økonomi og administrasjon (2 år)</li>
+        </ul>
+    </div>
+
+</section>
+
+<!-- Footer-->
+<footer>
+    <img src="images/logo.png" alt="">
+    <p>Samarbeid mellom de største universitetene i Norge. (Oslo, Bergen, Trondheim, og Tromsø)  </p>
+</footer>
+</body>
+</html>

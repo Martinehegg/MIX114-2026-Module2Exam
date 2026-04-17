@@ -1,0 +1,297 @@
+
+/*General body styling*/
+
+#icon {
+    width: 25px;
+}
+
+img {
+    width: 100px;
+}
+
+body {
+    padding: 3.125rem 0;
+    padding-bottom: 0;
+    margin: 0;
+    font-family: 'Abhaya Libre', serif;
+    background-color: #FAFBFF;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: #161C36;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Navbar*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.125rem;
+    margin-bottom: 2.3rem;
+}
+
+.logo img{
+    width: 10rem;
+}
+
+nav li{
+    font-size: 1.2rem;
+}
+nav ul {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #161C36;
+}
+
+header button {
+    background-color: #424C7A;
+    color: white;
+    padding: 1rem 4rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+/*Hero*/
+
+.hero{
+    display: flex;
+    gap: 3rem;
+    padding: 5rem 3rem;
+    margin: 0;
+    align-items: center;
+    background-color: #EEF1FF;
+}
+
+.hero img{
+    width: 47.1875rem;
+    height: 26.0625rem;
+    border-radius: 0.5rem;
+}
+
+.detail-card{
+    background-color: white;
+    padding: 2rem 5rem 2rem 5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.detail-card p:first-of-type{
+    margin: 0;
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
+
+.detail-card p:last-of-type{
+    margin: 1.5rem 0;
+    line-height: 1.5;
+}
+
+/*Buttons*/
+
+.buttons-detail{
+    display: flex;
+    gap: 5rem;
+    justify-content:center;
+
+}
+
+.buttons-detail button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    margin-left: auto;
+    padding:0.8rem 1.8rem;
+    border-radius: 1.5rem;
+    background-color: #CBD5FF;
+    cursor: pointer;
+    border: none;
+    margin: 3rem 0 0 0;
+
+
+}
+
+/*Oversikt*/
+
+.oversikt{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5rem;
+}
+
+.cards-oversikt{
+    background-color: #EEF1FF;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+    margin: 3rem;
+
+}
+
+.cards-oversikt p{
+    margin: 1.5rem 0;
+    line-height: 1.5;
+}
+/*Lønn og historie*/
+
+#lonn-historie{
+    margin: 0 0 0 2rem;
+
+}
+.historie{
+    overflow: auto;
+    margin: 0 3rem 3rem 3rem;
+    max-width: 1200px;
+    display: block;
+    margin:10rem auto;
+}
+
+.lonn{
+    float:left;
+    width: 40%;
+    margin: 0 4rem 0 0;
+}
+
+.utvikling{
+    float:right;
+    width: 40%;
+    margin: 0rem;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 0.625rem;
+    text-align: center;
+    line-height: 2rem;
+    
+}
+
+/*Vendepunkter og overganger*/
+
+.vendepunkter-overganger{
+    overflow: auto;
+    margin: 3rem;
+    display: block;
+    margin:8rem auto;
+    background-color: #2A3258;
+    padding: 3rem;
+}
+
+.vendepunkter{
+    float:left;
+    width: 40%;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 0.5rem;
+}
+
+.overganger{
+    float:right;
+    width: 40%;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 0.5rem;
+}
+
+.vendepunkter p, h3{
+    line-height: 1.5;
+}
+
+.overganger p, h3{
+    line-height: 1.5;
+}
+
+
+/*Reviews*/
+
+.reviews{
+    overflow: auto;
+    margin: 3rem;
+    display: block;
+    margin:8rem auto;
+    padding: 3rem;
+    max-width: 1200px;
+}
+
+.score{
+    float: left;
+    width: 40%;
+    background-color: #EEF1FF;
+    padding: 4rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+    margin: 3rem;
+    line-height: 1.5rem;
+}
+
+.tilfredshet{
+    float: right;
+    width: 20%;
+    background-color: #EEF1FF;
+    padding: 4rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+    margin: 3rem;
+    line-height: 1.5rem;
+}
+
+/*Forslag til karrierevei*/
+
+#karriereforslag{
+    margin: 3rem 0 0 2rem;
+}
+
+.karrierevei{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 5rem 0;
+
+}
+
+.karrierevei li{
+    display: inline-block;
+    max-width: 180px;
+    margin: 1rem;
+
+}
+
+.karrierevei ul{
+    list-style: none;
+    padding: 0;
+}
+
+.arrow{
+    width: 30px;
+    height: 30px;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #CBD5FF;
+    color: black;
+    text-align: center;
+    padding: 1.25rem 0;
+    margin: 3rem 0 0 0;
+
+}
+
+footer img{
+    width: 10rem;
+}

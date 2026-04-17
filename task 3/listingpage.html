@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/listingpage.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Listingpage</title>
+</head>
+
+<body>
+    <!-- Navbar-->
+    <header>
+        <a href="listingpage.html">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#karrierer-section">Alle karrierer</a></li>
+                <li><a href="comparingpage.html">Sammenlikne karrierer</a></li>
+                <li><a href="">Min profil</a></li>
+            </ul>
+        </nav>
+        <div class="menu">
+            <button id="Meny">
+                Meny
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero-->
+    <section class="hero">
+        <img src="images/hero.png" alt="">
+        <div class="hero-content">
+            <h1>Hva vil du bli?</h1>
+            <form class="search">
+                <input id="searchInput" type="text" placeholder="Søk her..." />
+            </form>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <!-- Mest besøkte-->
+        <section>
+            <!-- <h1>Mest besøkte karrieresider</h1> -->
+            <div class="mestbesokte">
+                <div class="bigcard">
+                    <img src="images/spesped.png" alt="">
+                    <h3>Spesialpedagogikk</h3>
+                    <p>Spesialpedagoger arbeider med tilpasset opplæring og inkluderende læringsmiljø for barn og unge
+                        med ulike behov.
+                        Yrket kombinerer kartlegging, tiltak og tett samarbeid med lærere og foresatte.</p>
+                    <p>Bachelor/master <br> Utdanning og pedagogikk</p>
+                </div>
+
+                <div class="bigcard">
+                    <img src="images/elektriker.png" alt="">
+                    <h3>Elektriker</h3>
+                    <p>Elektrikere installerer og vedlikeholder elektriske anlegg i boliger, næringsbygg og industri.
+                        Yrket kombinerer teknisk forståelse, sikkerhet og praktisk problemløsning.</p>
+                    <p>Fagbrev <br> Bygg og elektroteknikk</p>
+                </div>
+
+                <div class="bigcard">
+                    <img src="images/økonomi.png" alt="">
+                    <h3>Siviløkonom</h3>
+                    <p>Siviløkonomer arbeider med økonomistyring, strategi og ledelse i privat og offentlig sektor.
+                        Utdanningen gir sterke analytiske ferdigheter innen finans og forretningsutvikling.</p>
+                    <p>Master <br> Økonomi og administrasjon</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Finn din karrierevei-->
+        <section class="karrierer" id="karrierer-section">
+            <h1>Finn din karrierevei</h1>
+            <a href="listingpage-overlay.html#filterseksjon"><button id="filterbutton">Filter <img id="icon"
+                        src="images/icons/Filter-icon.png" alt=""></button></a>
+            <div class="small-cards" id="careerCards">
+                <div class="smallcard">
+                    <img src="images/biolog.png" alt="">
+                    <h3>Biolog</h3>
+                    <p>Biologer studerer levende organismer og økosystemer, og arbeider innen forskning,
+                        miljøforvaltning og bioteknologi.
+                        Yrket kombinerer analyse, feltarbeid og laboratoriearbeid.</p>
+                    <p>Bachelor/master <br> Naturvitenskap og miljø</p>
+                </div>
+
+                <div class="smallcard">
+                    <img src="images/tømrer.png" alt="">
+                    <h3>Tømrer</h3>
+                    <p>Tømrere bygger, monterer og rehabiliterer konstruksjoner i tre og andre materialer.
+                        Yrket krever presisjon, teknisk forståelse og praktisk kompetanse.</p>
+                    <p>Fagbrev <br> Bygg og anlegg</p>
+                </div>
+
+                <div class="smallcard">
+                    <img src="images/ux.png" alt="">
+                    <h3>UX/UI designer</h3>
+                    <p>UX/UI-designere utvikler digitale løsninger som er brukervennlige og intuitive.
+                        Yrket kombinerer teknologi, psykologi og visuell design for å forbedre digitale tjenester.</p>
+                    <p>Bachelor <br> Teknologi og design</p>
+                </div>
+
+                <div class="smallcard">
+                    <img src="images/frisor.png" alt="">
+                    <h3>Frisør</h3>
+                    <p>Frisører arbeider med hårdesign, styling og kundebehandling.
+                        Yrket kombinerer kreativitet, håndverk og kommunikasjon.</p>
+                    <p>Fagbrev <br> Service og kreative fag</p>
+                </div>
+
+                <div class="smallcard">
+                    <img src="images/elektriker.png" alt="">
+                    <h3>Elektriker</h3>
+                    <p>Elektrikere installerer og vedlikeholder elektriske anlegg i boliger, næringsbygg og industri.
+                        Yrket kombinerer teknisk forståelse, sikkerhet og praktisk problemløsning.</p>
+                    <p>Fagbrev <br> Bygg og elektronikk</p>
+                </div>
+
+                <div class="smallcard">
+                    <img src="images/spesped.png" alt="">
+                    <h3>Spesialpedagogikk</h3>
+                    <p>Spesialpedagoger arbeider med tilpasset opplæring og inkluderende læringsmiljø for barn og unge
+                        med ulike behov.
+                        Yrket kombinerer kartlegging, tiltak og tett samarbeid med lærere og foresatte.</p>
+                    <p>Bachelor/master <br> Utdanning og pedagogikk</p>
+                </div>
+
+                <div class="smallcard">
+                    <img src="images/helsefag.png" alt="">
+                    <h3>Helsefagarbeider</h3>
+                    <p>Helsefagarbeidere gir praktisk pleie og omsorg til pasienter og brukere i sykehjem,
+                        hjemmetjeneste og institusjoner.
+                        Yrket krever gode samarbeidsevner og omsorgskompetanse.</p>
+                    <p>Fagbrev <br> Helse- og omsorg</p>
+                </div>
+
+                <div class="smallcard">
+                    <img src="images/økonomi.png" alt="">
+                    <h3>Siviløkonom</h3>
+                    <p>Siviløkonomer arbeider med økonomistyring, strategi og ledelse i privat og offentlig sektor.
+                        Utdanningen gir sterke analytiske ferdigheter innen finans og forretningsutvikling.</p>
+                    <p>Master <br> Økonomi og administrasjon</p>
+                </div>
+            </div>
+<!--             <button id="flerekarrierer">Se flere karrierer her...</button>
+ -->        </section>
+    </div>
+    <!-- Footer-->
+
+    <footer>
+        <img class="logo" src="images/logo.png" alt="">
+        <p>Samarbeid mellom de største universitetene i Norge. (Oslo, Bergen, Trondheim, og Tromsø) </p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+
+/*General body styling*/
+
+#icon {
+    width: 25px;
+}
+
+img {
+    width: 100px;
+}
+
+body {
+    padding: 3.125rem 0;
+    padding-bottom: 0;
+    margin: 0;
+    font-family: 'Abhaya Libre', serif;
+    background-color: #FAFBFF;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: #161C36;
+}
+.container{
+    margin: 0 3.1rem 0 3.1rem;
+}
+
+
+/*Navbar*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.125rem;
+    margin-bottom: 2.3rem;
+}
+
+.logo img{
+    width: 10rem;
+}
+
+nav li{
+    font-size: 1.2rem;
+}
+nav ul {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #161C36;
+}
+
+header button {
+    background-color: #424C7A;
+    color: white;
+    padding: 1rem 4rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+
+/*Comparing begge karrierer*/
+
+.comparing-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding:3.125rem 0;
+    gap: 3.625rem;
+}
+
+
+
+.karrierer{
+    display: grid;
+    grid-template-columns: 1fr;
+    color:white;
+    background-color: #2A3258;
+    padding:3.125rem;
+    border-radius: 1.6rem;
+
+}
+
+.karrierer-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6.25rem;
+    
+
+}
+
+.bigcard{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    padding: 0.625rem;
+    gap: 1.25rem;
+    border: 1px solid #2A3258;
+    color: black;
+    border-radius: 0.6rem;
+    
+    
+}
+
+.bigcard img {
+    width: 100%;
+    height: 16.25rem;        
+    object-fit: cover; 
+    display: block;
+    border-radius: 0.5rem;
+  }
+
+.bigcard p,h3{
+    padding:0 1.25rem;
+    gap: 1,8rem;
+}
+
+.bigcard p:first-of-type {
+    text-align: left;
+}
+
+.bigcard p:last-of-type {
+    text-align: right;
+}
+
+.cards-comparing{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    padding: 0.625rem;
+    gap: 1rem;
+    border: 1px solid #2A3258;
+    color: black;
+    border-radius: 0.6rem;
+}
+
+.cards-comparing p,h3{
+    padding:0 1.25rem;
+    gap: 1,8rem;
+}
+
+.cards-comparing h3{
+    text-align: center;
+}
+
+.cards-comparing img{
+    width: 100%;       
+    object-fit: cover; 
+    display: block;
+    border-radius: 0.5rem;
+
+}
+
+/*Footer*/
+footer{
+    background-color: #CBD5FF;
+    color: black;
+    text-align: center;
+    padding: 1.25rem 0;
+   
+}
+
+footer img{
+    width: 10rem;
+}
