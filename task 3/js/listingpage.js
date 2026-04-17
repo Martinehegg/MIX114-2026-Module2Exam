@@ -118,6 +118,18 @@ async function fetchAllData() {
       console.error("Could not fetch data:", error);
     }
   }
+
+  function setupDetailButtons() {
+    const detailButtons = document.querySelectorAll('.details-btn'); // Select all buttons with the class 'details-btn'
+
+    detailButtons.forEach(button => {
+      button.addEventListener('click', () =>{
+        const careerId = button.getAttribute('data-id'); //get id from data attribute
+        window.location.href = 'detailpage.html?careerId=' + careerId; // open new page with the careerId as a query parameter
+
+      })
+    })
+  }
   
   function renderCareerCards(careers) {
     careerCards.innerHTML = '';
@@ -156,7 +168,10 @@ async function fetchAllData() {
     console.log(allCareers[0]); // Check if there is img data in the first career object
     // There was not img data in the career objects, so i have to add them locally to the objects
 
+    setupDetailButtons();
   }
+
+  
 
   fetchAllData();
 
