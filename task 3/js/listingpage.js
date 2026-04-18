@@ -5,7 +5,7 @@ function translateEducationLevel(level) {
   const levels = {
     bachelor: "Bachelor",
     master: "Master",
-    vocational_training: "Fagbrev",
+    vocational_certificate: "Fagbrev",
     certificate: "Fagbrev"
   };
 

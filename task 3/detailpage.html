@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/detailpage.css">
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
     <title>Detailpage</title>
 </head>
 <body>
@@ -54,14 +55,17 @@
 
     <div class="cards-oversikt">
         <h2>Arbeidsmarked Norge</h2>
+        <div id="jobMarket"></div>
     </div>
 
     <div class="cards-oversikt">
         <h2>Økonomi</h2>
+        <div id="ecoInfo"></div>
     </div>
 
     <div class="cards-oversikt">
         <h2>Globalt perspektiv</h2>
+        <div id="globalPerspective"></div>
     </div>
 
 </section>
@@ -73,7 +77,7 @@
     <div id="salaryChart" class="lonn"></div>
         <div class="utvikling">
         <h3>Historisk utvikling</h3>
-        <p id="HistoryText"></p>
+        <p id="historyText"></p>
     </div>
 </section>
 
@@ -98,17 +102,10 @@
     <h1>Reviews</h1>
     <div id="reviewsList"></div>
     </div>
-
-  
-    <div class="tilfredshet">
-    <h1>Tilfredshet</h1>
-        <p id="satisfactionInfo"></p>
-    </div>
-
  </section>
 
 <!-- Forslag til karrierevei-->
-
+<!-- 
 <h1 id="karriereforslag">Forslag til karrierevei som Siviløkonom</h1>
 <section class="karrierevei">
 
@@ -126,7 +123,7 @@
         </ul>
     </div>
 
-</section>
+</section> -->
 
 <!-- Footer-->
 <footer>
