@@ -1,144 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/comparingpage.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/comparingpage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Comparingpage</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar-->
     <header>
-        <a href="listingpage.html"><div class="logo">
-            <img src="images/logo.png" alt="">
-          </div></a>
-        <nav>
-          <ul>
-            <li><a href="listingpage.html#karrierer-section">Alle karrierer</a></li>
-            <li><a href="#">Sammenlikne karrierer</a></li>
-            <li><a href="">Min profil</a></li>
-          </ul>
-        </nav>
-        <div class="menu">
-          <button id="Meny">
-              Meny
-          </button>
-        </div>
-      </header>
+      <a href="listingpage.html"
+        ><div class="logo">
+          <img src="images/logo.png" alt="" /></div
+      ></a>
+      <nav>
+        <ul>
+          <li>
+            <a href="listingpage.html#karrierer-section">Alle karrierer</a>
+          </li>
+          <li><a href="#">Sammenlikne karrierer</a></li>
+          <li><a href="">Min profil</a></li>
+        </ul>
+      </nav>
+      <div class="menu">
+        <button id="Meny">Meny</button>
+      </div>
+    </header>
 
-<div class="container">
-<!--Første karriere-->
-<div class="comparing-grid">
-<section class="karrierer">
-    <div class="karrierer-content">
-    <div class="bigcard">
-        <img src="images/økonomi.png" alt="">
-        <h2>Siviløkonom</h2>
-        <p>Siviløkonomer arbeider med økonomistyring, strategi og ledelse i privat og offentlig sektor. 
-            Utdanningen gir sterke analytiske ferdigheter innen finans og forretningsutvikling.</p>
-        <p>Master <br> Økonomi og administrasjon</p>
-    </div> 
+    <select name="" id="career1"></select>
+    <select name="" id="career2"></select>
+    <button id="compareBtn">Sammenlikn</button>
 
-    <div class="cards-comparing">
-        <h3>Utdanning</h3>
-        <p>Type: Mastergrad (5 år)
-            <br> Lengde: 3 år bachelor + 2 år master
-            <br> Varighet: 5 år
-            <br> Kostnad: Lav-moderat (offentlig utdanning)
-            <br> Opptakskrav: Generell studiekompetanse</p>
-    </div> 
+    <table id="compareTable">
+      <tr>
+        <th>Kategori</th>
+        <th>Karriere 1</th>
+        <th>Karriere 2</th>
+      </tr>
+    </table>
 
-    <div class="cards-comparing">
-        <h3>Arbeidsmarked</h3>
-        <p>Norge
-            <br> Antall ansatte: ca. 42 000
-            <br>Nye stillingsannonser per år: ca. 3 800
-            <br>Estimerte nye jobber per år: 2 600
-            <br>Etterspørsel: Stabil til økende (finans, analyse, strategi)</p>
-        <p>Globalt
-            <br> Nye jobber globalt per år: ca. 320 000
-            <br> Internasjonal konkurranseevne: Høy
-            <br> Etterspørsel: Økende (digital økonomi, bærekraftsrapportering, finansanalyse)</p>
-    </div> 
+    <!-- Footer-->
 
-    <div class="cards-comparing">
-        <h3>Økonomi</h3>
-        <img src="images/charts/økonomlonn.png" alt="">
-        <p>Gjennomsnittslønn: ca. 720 000 kr/år
-            <br> Total verdiskaping: ca. 58 mrd kr/år
-            <br> Verdiskaping per ansatt: ca. 1 380 000 kr</p>
-    </div> 
+    <footer>
+      <img src="images/logo.png" alt="" />
+      <p>
+        Samarbeid mellom de største universitetene i Norge. (Oslo, Bergen,
+        Trondheim, og Tromsø)
+      </p>
+    </footer>
 
-    <div class="cards-comparing">
-        <h3>Tilfredshet</h3>
-        Jobbtilfredshet: 7,8/10
-        <br> Work-life balance: 6,5/10
-        <br> Fysisk belastning: 1/10
-        <br> Kognitiv belastning: 8/10
-    </div>
-</div>
-</section>
-
-<!--Andre karriere-->
-<section class="karrierer">
-    <div class="karrierer-content">
-    <div class="bigcard">
-        <img src="images/frisor.png" alt="">
-        <h2>Frisør</h2>
-        <p>Frisører arbeider med hårklipp, styling og kundebehandling i skjønnhetsbransjen. 
-            Utdanningen gir praktiske ferdigheter innen farge, form og hårpleie.</p>
-        <p>Fagbrev <br> Service og kreative fag</p>
-    </div> 
-
-    <div class="cards-comparing">
-        <h3>Utdanning</h3>
-        <p>Type: Fagbrev
-            <br>Lengde: 2 år VGS + 2 år lære
-            <br>Total varighet: 4 år
-            <br>Kostnad: Lav (lærlinglønn i læretiden)
-            <br>Opptakskrav: Fullført ungdomsskole (til VGS)</p>
-    </div> 
-
-    <div class="cards-comparing">
-        <h3>Arbeidsmarked</h3>
-        <p>Norge
-            <br> Antall ansatte: ca. 11 000
-            <br> Nye stillingsannonser per år: ca. 1 000
-            <br> Estimerte nye jobber per år: ca. 700
-            <br> Etterspørsel: Stabil (salong, helse/velvære, event)</p>
-        <p>Globalt
-            <br> Nye jobber globalt per år: ca. 180 000
-            <br> Internasjonal konkurranseevne: Middels-høy
-            <br> Etterspørsel: Stabil/økende (skjønnhet, velvære, trendmarked)</p>
-    </div> 
-
-    <div class="cards-comparing">
-        <h3>Økonomi</h3>
-        <img src="images/charts/frisorlonn.png" alt="">
-        <p>Gjennomsnittslønn: ca. 470 000 kr/år
-            <br> Total verdiskaping: ca. 4,5 mrd kr/år
-            <br> Verdiskaping per ansatt: ca. 410 000 kr</p>
-    </div> 
-
-    <div class="cards-comparing">
-        <h3>Tilfredshet</h3>
-        Jobbtilfredshet: 8/10
-        <br> Work-life balance: 7/10
-        <br> Fysisk belastning: 6/10
-        <br> Kognitiv belastning: 4/10
-    </div>
-</div>
-</section>
-</div>
-
-</div>
-  <!-- Footer-->
-
-  <footer>
-    <img src="images/logo.png" alt="">
-    <p>Samarbeid mellom de største universitetene i Norge. (Oslo, Bergen, Trondheim, og Tromsø)  </p>
-</footer>
-
-</body>
+    <script src="js/comparingpage.js"></script>
+  </body>
 </html>

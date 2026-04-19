@@ -62,7 +62,7 @@ function translateTitle(id, fallbackTitle) {
     career_welder: 'Sveiser',
     career_logistics_coordinator: 'Logistikkkoordinator',
     career_farmer_agritech: 'Landbrukstekniker',
-    career_cybersecurity_analyst:  'Cybersikkerhetsanalytiker',
+    career_cybersecurity_analyst: 'Cybersikkerhetsanalytiker',
   };
 
   return titles[id] || fallbackTitle;
@@ -89,8 +89,8 @@ function getCareerImage(careerId) {
     career_welder: 'images/welder.png',
     career_logistics_coordinator: 'images/logistics-coordinator.png',
     career_farmer_agritech: 'images/farmer-agritech.png',
-    career_cybersecurity_analyst:  'images/cybersecurity-analyst.png',
-    };
+    career_cybersecurity_analyst: 'images/cybersecurity-analyst.png',
+  };
 
   return careerImages[careerId] || 'images/default_career.png'; // Return default image if not found
 }
@@ -99,60 +99,60 @@ const careerCards = document.getElementById("careerCards");
 let allCareers = [];
 
 async function fetchAllData() {
-    try {
-      const response = await fetch("https://api.npoint.io/50c59220b5f6b049d324");
-      const data = await response.json();
-      console.log(data);
+  try {
+    const response = await fetch("https://api.npoint.io/50c59220b5f6b049d324");
+    const data = await response.json();
+    console.log(data);
 
-      allCareers = data.career_options.map((careerId) => {
-        return{
-          id : careerId,
-          ...data.career_paths[careerId]
+    allCareers = data.career_options.map((careerId) => {
+      return {
+        id: careerId,
+        ...data.career_paths[careerId]
       };
     });
 
-      console.log('All careers', allCareers);
-      renderCareerCards(allCareers);
+    console.log('All careers', allCareers);
+    renderCareerCards(allCareers);
 
-    } catch (error) {
-      console.error("Could not fetch data:", error);
-    }
+  } catch (error) {
+    console.error("Could not fetch data:", error);
   }
+}
 
-  function setupDetailButtons() {
-    const detailButtons = document.querySelectorAll('.details-btn'); // Select all buttons with the class 'details-btn'
+function setupDetailButtons() {
+  const detailButtons = document.querySelectorAll('.details-btn'); // Select all buttons with the class 'details-btn'
 
-    detailButtons.forEach(button => {
-      button.addEventListener('click', () =>{
-        const careerId = button.getAttribute('data-id'); //get id from data attribute
-        window.location.href = 'detailpage.html?careerId=' + careerId; // open new page with the careerId as a query parameter
+  detailButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const careerId = button.getAttribute('data-id'); //get id from data attribute
+      window.location.href = 'detailpage.html?careerId=' + careerId; // open new page with the careerId as a query parameter
 
-      })
     })
-  }
-  
-  function renderCareerCards(careers) {
-    careerCards.innerHTML = '';
+  })
+}
 
-    careers.forEach((career) => {
-      const card = document.createElement('article');
-      card.classList.add('smallcard');
+function renderCareerCards(careers) {
+  careerCards.innerHTML = '';
 
-      const educationLevels = career.education_options
+  careers.forEach((career) => {
+    const card = document.createElement('article');
+    card.classList.add('smallcard');
+
+    const educationLevels = career.education_options
       .map(option => translateEducationLevel(option.level)) // Using the translation function to convert education levels to Norwegian
       .join(' / ');
 
-      const imageSrc = getCareerImage(career.id); // Get the image URL based on the career ID
-      
-      const professionFamily = translateProfessionFamily(career.profession_family);
+    const imageSrc = getCareerImage(career.id); // Get the image URL based on the career ID
 
-      const title = translateTitle(career.id, career.title); // Translate the title using the career ID as a key, with a fallback to the original title
-      
-      const tags = career.tags
+    const professionFamily = translateProfessionFamily(career.profession_family);
+
+    const title = translateTitle(career.id, career.title); // Translate the title using the career ID as a key, with a fallback to the original title
+
+    const tags = career.tags
       .map(tag => tag.replaceAll("_", " "))
       .join(", ");
 
-      card.innerHTML = `
+    card.innerHTML = `
       <img src="${imageSrc}" alt="${career.title}">
       <h3>${title}</h3>
       <p>${tags}</p>
@@ -162,16 +162,16 @@ async function fetchAllData() {
         Se detaljer
       </button>
     `;
-      careerCards.appendChild(card);
-    });
+    careerCards.appendChild(card);
+  });
 
-    console.log(allCareers[0]); // Check if there is img data in the first career object
-    // There was not img data in the career objects, so i have to add them locally to the objects
+  console.log(allCareers[0]); // Check if there is img data in the first career object
+  // There was not img data in the career objects, so i have to add them locally to the objects
 
-    setupDetailButtons();
-  }
+  setupDetailButtons();
+}
 
-  
 
-  fetchAllData();
+
+fetchAllData();
 

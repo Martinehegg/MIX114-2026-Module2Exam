@@ -8,72 +8,72 @@ console.log("Career ID from URL:", careerId); // Log the career ID to verify tha
 // Translating functions
 function translateEducationLevel(level) {
     const levels = {
-      bachelor: "Bachelor",
-      master: "Master",
-      vocational_certificate: "Fagbrev",
-      certificate: "Fagbrev"
+        bachelor: "Bachelor",
+        master: "Master",
+        vocational_certificate: "Fagbrev",
+        certificate: "Fagbrev"
     };
-  
-    return levels[level] || level;
-  }
-  
-  function translateProfessionFamily(family) {
-    const families = {
-      technology_and_design: "Teknologi og design",
-      health_and_care: "Helse og omsorg",
-      economy_and_administration: "Økonomi og administrasjon",
-      education_and_pedagogy: "Utdanning og pedagogikk",
-      building_and_construction: "Bygg og anlegg",
-      service_and_creative_fields: "Service og kreative fag",
-      data_and_ai: "Data og AI",
-      education: "Utdanning",
-      engineering_and_construction: "Ingeniørfag og bygg",
-      technology: "Teknologi",
-      healthcare: "Helse",
-      engineering: "Ingeniørfag",
-      finance: "Finans",
-      business_and_media: "Forretning og media",
-      construction_and_energy: "Bygg og energi",
-      construction_and_maintenance: "Bygg og vedlikehold",
-      construction: "Bygg",
-      transport_and_maintenance: "Transport og vedlikehold",
-      hospitality_and_food: "Hotell og mat",
-      industry_and_fabrication: "Industri og produksjon",
-      transport_and_supply_chain: "Transport og logistikk",
-      agriculture_and_food: "Landbruk og mat",
-      technology_and_security: "Teknologi og sikkerhet",
-    };
-  
-    return families[family] || family.replaceAll("_", " ");
-  }
-  
-  function translateTitle(id, fallbackTitle) {
-    const titles = {
-      career_software_engineer: 'Programvareingeniør',
-      career_interaction_designer: 'Interaksjonsdesigner',
-      career_data_scientist: 'Dataforsker',
-      career_nurse: 'Sykepleier',
-      career_doctor: 'Lege',
-      career_teacher: 'Lærer',
-      career_mechanical_engineer: 'Maskiningeniør',
-      career_civil_engineer: 'Sivilingeniør',
-      career_accountant: 'Regnskapsfører',
-      career_marketing_manager: 'Markedsføringssjef',
-      career_electrician: 'Elektriker',
-      career_plumber: 'Rørlegger',
-      career_carpenter: 'Tømrer',
-      career_automotive_mechanic: 'Bilmekaniker',
-      career_chef: 'Kokk',
-      career_welder: 'Sveiser',
-      career_logistics_coordinator: 'Logistikkkoordinator',
-      career_farmer_agritech: 'Landbrukstekniker',
-      career_cybersecurity_analyst:  'Cybersikkerhetsanalytiker',
-    };
-  
-    return titles[id] || fallbackTitle;
-  }
 
-  function translatePivotalEvent(event) {
+    return levels[level] || level;
+}
+
+function translateProfessionFamily(family) {
+    const families = {
+        technology_and_design: "Teknologi og design",
+        health_and_care: "Helse og omsorg",
+        economy_and_administration: "Økonomi og administrasjon",
+        education_and_pedagogy: "Utdanning og pedagogikk",
+        building_and_construction: "Bygg og anlegg",
+        service_and_creative_fields: "Service og kreative fag",
+        data_and_ai: "Data og AI",
+        education: "Utdanning",
+        engineering_and_construction: "Ingeniørfag og bygg",
+        technology: "Teknologi",
+        healthcare: "Helse",
+        engineering: "Ingeniørfag",
+        finance: "Finans",
+        business_and_media: "Forretning og media",
+        construction_and_energy: "Bygg og energi",
+        construction_and_maintenance: "Bygg og vedlikehold",
+        construction: "Bygg",
+        transport_and_maintenance: "Transport og vedlikehold",
+        hospitality_and_food: "Hotell og mat",
+        industry_and_fabrication: "Industri og produksjon",
+        transport_and_supply_chain: "Transport og logistikk",
+        agriculture_and_food: "Landbruk og mat",
+        technology_and_security: "Teknologi og sikkerhet",
+    };
+
+    return families[family] || family.replaceAll("_", " ");
+}
+
+function translateTitle(id, fallbackTitle) {
+    const titles = {
+        career_software_engineer: 'Programvareingeniør',
+        career_interaction_designer: 'Interaksjonsdesigner',
+        career_data_scientist: 'Dataforsker',
+        career_nurse: 'Sykepleier',
+        career_doctor: 'Lege',
+        career_teacher: 'Lærer',
+        career_mechanical_engineer: 'Maskiningeniør',
+        career_civil_engineer: 'Sivilingeniør',
+        career_accountant: 'Regnskapsfører',
+        career_marketing_manager: 'Markedsføringssjef',
+        career_electrician: 'Elektriker',
+        career_plumber: 'Rørlegger',
+        career_carpenter: 'Tømrer',
+        career_automotive_mechanic: 'Bilmekaniker',
+        career_chef: 'Kokk',
+        career_welder: 'Sveiser',
+        career_logistics_coordinator: 'Logistikkkoordinator',
+        career_farmer_agritech: 'Landbrukstekniker',
+        career_cybersecurity_analyst: 'Cybersikkerhetsanalytiker',
+    };
+
+    return titles[id] || fallbackTitle;
+}
+
+function translatePivotalEvent(event) {
     const events = {
         digital_learning_platforms: "Digitale læringsplattformer blir vanlige i utdanning",
         generative_ai_in_education: "Generativ AI blir integrert i utdanning",
@@ -83,18 +83,18 @@ function translateEducationLevel(level) {
 
 function translateRequirement(req) {
     const requirements = {
-      general_study_competence: "Generell studiekompetanse",
-      relevant_bachelor_degree: "Relevant bachelorgrad",
-      mathematics_r1_or_equivalent: "Matematikk R1 eller tilsvarende",
-      advanced_mathematics: 'Avansert matematikk',
-      advanced_science_requirements: 'Avansert realfagskrav',
-      completed_lower_secondary_school: 'Fullført grunnskole'
+        general_study_competence: "Generell studiekompetanse",
+        relevant_bachelor_degree: "Relevant bachelorgrad",
+        mathematics_r1_or_equivalent: "Matematikk R1 eller tilsvarende",
+        advanced_mathematics: 'Avansert matematikk',
+        advanced_science_requirements: 'Avansert realfagskrav',
+        completed_lower_secondary_school: 'Fullført grunnskole'
     };
-  
-    return requirements[req] || req.replaceAll("_", " ");
-  }
 
-  function translateGrowthTrend(trend) {
+    return requirements[req] || req.replaceAll("_", " ");
+}
+
+function translateGrowthTrend(trend) {
     const trends = {
         fast_growing: "Raskt voksende",
         growing: "Voksende",
@@ -103,62 +103,62 @@ function translateRequirement(req) {
     return trends[trend] || trend;
 }
 
-  function translateProviders(pro) {
+function translateProviders(pro) {
     const providers = {
         upper_secondary_schools: "Videregående skoler",
         apprenticeship_companies: "Lærlingebedrifter",
     };
     if (providers[pro]) {
         return providers[pro]; // oversett hvis det finnes
-        }
-        
+    }
+
     return pro.toUpperCase(); // ellers: UIO, NTNU osv
-        }
-  
-  // Function to get the image URL based on the career ID
-  function getCareerImage(careerId) {
+}
+
+// Function to get the image URL based on the career ID
+function getCareerImage(careerId) {
     const careerImages = {
-      career_software_engineer: 'images/software-engineer.png',
-      career_interaction_designer: 'images/ux.png',
-      career_data_scientist: 'images/data-scientist.png',
-      career_nurse: 'images/nurse.png',
-      career_doctor: 'images/doctor.png',
-      career_teacher: 'images/teacher.png',
-      career_mechanical_engineer: 'images/mechanical-engineer.png',
-      career_civil_engineer: 'images/civil-engineer.png',
-      career_accountant: 'images/accountant.png',
-      career_marketing_manager: 'images/marketing-manager.png',
-      career_electrician: 'images/electrician.png',
-      career_plumber: 'images/plumber.png',
-      career_carpenter: 'images/carpenter.png',
-      career_automotive_mechanic: 'images/automotive-mechanic.png',
-      career_chef: 'images/chef.png',
-      career_welder: 'images/welder.png',
-      career_logistics_coordinator: 'images/logistics-coordinator.png',
-      career_farmer_agritech: 'images/farmer-agritech.png',
-      career_cybersecurity_analyst:  'images/cybersecurity-analyst.png',
-      };
-  
+        career_software_engineer: 'images/software-engineer.png',
+        career_interaction_designer: 'images/ux.png',
+        career_data_scientist: 'images/data-scientist.png',
+        career_nurse: 'images/nurse.png',
+        career_doctor: 'images/doctor.png',
+        career_teacher: 'images/teacher.png',
+        career_mechanical_engineer: 'images/mechanical-engineer.png',
+        career_civil_engineer: 'images/civil-engineer.png',
+        career_accountant: 'images/accountant.png',
+        career_marketing_manager: 'images/marketing-manager.png',
+        career_electrician: 'images/electrician.png',
+        career_plumber: 'images/plumber.png',
+        career_carpenter: 'images/carpenter.png',
+        career_automotive_mechanic: 'images/automotive-mechanic.png',
+        career_chef: 'images/chef.png',
+        career_welder: 'images/welder.png',
+        career_logistics_coordinator: 'images/logistics-coordinator.png',
+        career_farmer_agritech: 'images/farmer-agritech.png',
+        career_cybersecurity_analyst: 'images/cybersecurity-analyst.png',
+    };
+
     return careerImages[careerId] || 'images/default_career.png'; // Return default image if not found
-  }
+}
 
 async function fetchCareerDetails() {
 
-// Hero
+    // Hero
 
     // Fetch the career details from the API using the career ID
     try {
         const response = await fetch("https://api.npoint.io/50c59220b5f6b049d324");
         const data = await response.json();
 
-       
+
         // create a career object with careerId and details from API
         const career = {
             id: careerId,
             ...data.career_paths[careerId]
         };
 
-     // Career image
+        // Career image
         const imageSrc = getCareerImage(career.id); // Get the image URL based on the career ID
 
         const educationLevels = career.education_options
@@ -170,7 +170,7 @@ async function fetchCareerDetails() {
 
         const title = translateTitle(career.id, career.title); // Translate the title using the career ID as a key, with a fallback to the original title
 
-// Oversikt
+        // Oversikt
         // Utdanning
         const educationInfo = career.education_options.map(option => {
             const level = translateEducationLevel(option.level);
@@ -193,12 +193,12 @@ async function fetchCareerDetails() {
             `;
         }).join("");
 
-            // Arbeidsmarked Norge
-            const employment = career.economy.norway.employed_people;
-            const newJob = career.economy.norway.new_job_announcements_per_year;
-            const growth = translateGrowthTrend(career.economy.norway.growth_trend);
+        // Arbeidsmarked Norge
+        const employment = career.economy.norway.employed_people;
+        const newJob = career.economy.norway.new_job_announcements_per_year;
+        const growth = translateGrowthTrend(career.economy.norway.growth_trend);
 
-            const jobMarket =`
+        const jobMarket = `
             <p>
                 <strong>Antall ansatte:</strong> ${employment}<br>
                 <strong>Nye stillinger per år:</strong> ${newJob}<br>
@@ -206,12 +206,12 @@ async function fetchCareerDetails() {
             </p>
             `;
 
-            // Økonomi
-            const salary = career.economy.norway.average_salary_nok.toLocaleString("no-NO");
-            const totalOutput = career.economy.norway.total_economic_output_mnok.toLocaleString("no-NO");
-            const workerOutput = career.economy.norway.economic_output_per_worker_nok.toLocaleString("no-NO");
+        // Økonomi
+        const salary = career.economy.norway.average_salary_nok.toLocaleString("no-NO");
+        const totalOutput = career.economy.norway.total_economic_output_mnok.toLocaleString("no-NO");
+        const workerOutput = career.economy.norway.economic_output_per_worker_nok.toLocaleString("no-NO");
 
-            const economyInfo = `
+        const economyInfo = `
             <p>
                 <strong>Gjennomsnittslønn:</strong> ${salary} NOK<br>
                 <strong>Total verdiskapning:</strong> ${totalOutput} NOK<br>
@@ -219,12 +219,12 @@ async function fetchCareerDetails() {
             </p>
             `;
 
-            // Globalt perspektiv
-            const globalNewJob = career.economy.global.new_job_announcements_per_year;
-            const globalEmployed = career.economy.global.employed_people;
-            const globalComp = career.economy.global.international_competitiveness_score;
+        // Globalt perspektiv
+        const globalNewJob = career.economy.global.new_job_announcements_per_year;
+        const globalEmployed = career.economy.global.employed_people;
+        const globalComp = career.economy.global.international_competitiveness_score;
 
-            const globalInfo = `
+        const globalInfo = `
             <p> 
                 <strong>Nye stillinger per år globalt:</strong> ${globalNewJob}<br>
                 <strong>Antall ansatte globalt:</strong> ${globalEmployed}<br>
@@ -232,7 +232,7 @@ async function fetchCareerDetails() {
             </p>
             `;
 
-// Lønn og Historie
+        // Lønn og Historie
         // Lønnsutvikling
 
         const chartData = career.historical_and_forecast.timeseries.map(point => [
@@ -240,7 +240,7 @@ async function fetchCareerDetails() {
             point.salary = point.norway_avg_salary_nok
         ]);
 
-        Highcharts.chart ('salaryChart',{
+        Highcharts.chart('salaryChart', {
             title: {
                 text: 'Lønnsutvikling'
             },
@@ -274,15 +274,15 @@ async function fetchCareerDetails() {
                 <strong>Gjennomsnittslønn:</strong> ${avgSalary} NOK
             </p>
             `;
-            
+
         }).join("");
 
-// Vendepunkter og overganger
+        // Vendepunkter og overganger
         //Vendepunkter
         const pivotalEvents = career.historical_and_forecast.pivotal_points.map(event => {
             const eventYear = event.year;
             const description = translatePivotalEvent(event.event);
-        
+
             return `
             <p>
                 <strong>År:</strong> ${eventYear} → ${description}
@@ -293,10 +293,10 @@ async function fetchCareerDetails() {
 
         // Overganger
         const transitionsIn = career.transitions.yearly_inflow_from_other_professions.map(item => item.people_per_year)
-        .reduce((sum, value) => sum + value, 0);
+            .reduce((sum, value) => sum + value, 0);
 
         const transitionsOut = career.transitions.yearly_outflow_to_other_professions.map(item => item.people_per_year)
-        .reduce((sum, value) => sum + value, 0);
+            .reduce((sum, value) => sum + value, 0);
 
         const transitionInfo = `
         <p>
@@ -305,7 +305,7 @@ async function fetchCareerDetails() {
         </p>
         `;
 
-// Reviews
+        // Reviews
         const reviews = career.reviews.map(review => {
             const satisfaction = review.satisfaction_score;
             const reviewCountry = review.country;
@@ -320,28 +320,28 @@ async function fetchCareerDetails() {
             `
         }).join("");
 
-//Get element
+        //Get element
         // Hero
         document.getElementById('careerHeroImg').src = imageSrc; // Set the image source for the career hero image
         document.getElementById("careerTitle").textContent = title; // Set the career title in the HTML
         document.getElementById('careerLevel').textContent = educationLevels;
         document.getElementById('careerFamily').textContent = professionFamily;
         document.getElementById('careerDesc').textContent = career.description.summary;
-        
+
         // Oversikt
         document.getElementById("detailEducation").innerHTML = educationInfo;
         document.getElementById('jobMarket').innerHTML = jobMarket;
         document.getElementById('ecoInfo').innerHTML = economyInfo;
         document.getElementById('globalPerspective').innerHTML = globalInfo;
-        
+
         //Lønn og Historie
-        document.getElementById('salaryChart'); // Render the salary chart in the specified container
+        document.getElementById('salaryChart'); // The chart will be rendered here by Highcharts
         document.getElementById('historyText').innerHTML = historicalTrends;
-        
+
         // Vendepunkter og overganger
         document.getElementById('pivotalPoints').innerHTML = pivotalEvents;
         document.getElementById('careerTransitions').innerHTML = transitionInfo;
-        
+
         // Reviews
         document.getElementById('reviewsList').innerHTML = reviews;
 
