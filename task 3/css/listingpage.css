@@ -37,18 +37,25 @@ header {
     margin-bottom: 2.3rem;
 }
 
-.logo img {
-    width: 10rem;
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
-nav li {
+.logo img{
+    width: 10rem;
+    margin-right: 40px;
+}
+
+nav li{
     font-size: 1.2rem;
 }
 
 nav ul {
     display: flex;
     gap: 5rem;
-    list-style: none;
+    list-style: none;    
 }
 
 nav a {

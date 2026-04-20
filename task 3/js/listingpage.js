@@ -1,4 +1,21 @@
 
+//Hero
+// Search bar in hero section
+
+const searchInput = document.getElementById('searchInput');
+
+searchInput.addEventListener('input',() => {
+  const searchValue = searchInput.value.toLowerCase();
+
+  const filteredCareers = allCareers.filter(career => {
+    const translatedTitle = translateTitle(career.id, career.title).toLowerCase();
+
+    return translatedTitle.includes(searchValue);
+  });
+  renderCareerCards(filteredCareers);
+})
+
+
 //Translating from english to norwegian
 
 function translateEducationLevel(level) {
