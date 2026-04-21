@@ -172,6 +172,10 @@ h3 {
 
 /*Finn din karrierevei*/
 
+.hidden {
+    display: none;
+}
+
 #filterbutton {
     display: flex;
     align-items: center;

@@ -1,98 +1,99 @@
 <!DOCTYPE html>
 <html lang="no">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/listingpage.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Listingpage</title>
-  </head>
 
-  <body>
-    <!-- Navbar-->
-    <header>
-      <a href="listingpage.html">
-        <div class="logo">
-          <img src="images/logo.png" alt="" />
-        </div>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="#karrierer-section">Alle karrierer</a></li>
-          <li><a href="comparingpage.html">Sammenlikne karrierer</a></li>
-          <li><a href="">Min profil</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/listingpage.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600;700&display=swap" rel="stylesheet" />
+  <title>Listingpage</title>
+</head>
 
-    <!-- Hero-->
-    <section class="hero">
-      <img src="images/hero.png" alt="" />
-      <div class="hero-content">
-        <h1>Hva vil du bli?</h1>
-        <form class="search">
-          <input id="searchInput" type="text" placeholder="Søk karriere..." />
-        </form>
+<body>
+  <!-- Navbar-->
+  <header>
+    <a href="listingpage.html">
+      <div class="logo">
+        <img src="images/logo.png" alt="" />
       </div>
-    </section>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#karrierer-section">Alle karrierer</a></li>
+        <li><a href="comparingpage.html">Sammenlikne karrierer</a></li>
+        <li><a href="">Min profil</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="container">
-
-      <!-- Finn din karrierevei-->
-      <section class="karrierer" id="karrierer-section">
-        <h1>Finn din karrierevei</h1>
-    
-    <select id="filterLevel">
-        <option value="">Alle nivåer</option>
-        <option value="bachelor">Bachelor</option>
-        <option value="master">Master</option>
-        <option value="vocational_certificate">Fagbrev</option>
-    </select>
-
-    <select id="filterFamily">
-        <option value="">Alle fagområder</option>
-        <option value="technology_and_design">Teknologi og design</option>
-        <option value="economy_and_administration">Økonomi og administrasjon"</option>
-        <option value="education_and_pedagogy">Utdanning og pedagogikk</option>
-        <option value="building_and_construction">Bygg og anlegg</option>
-        <option value="service_and_creative_fields">Service og kreative fag</option>
-        <option value="data_and_ai">Data og AI</option>
-        <option value="education">Utdanning</option>
-        <option value="engineering_and_construction">Ingeniørfag og bygg</option>
-        <option value="technology">Teknologi</option>
-        <option value="healthcare">Helse</option>
-        <option value="engineering">Ingeniørfag</option>
-        <option value="finance">Finans</option>
-        <option value="business_and_media">Forretning og media</option>
-        <option value="construction_and_energy">Bygg og energi</option>
-        <option value="construction_and_maintenance">Bygg og vedlikehold</option>
-        <option value="construction">Bygg</option>
-        <option value="transport_and_maintenance">Transport og vedlikehold</option>
-        <option value="hospitality_and_food">Hotell og mat</option>
-        <option value="industry_and_fabrication">Industri og produksjon</option>
-        <option value="transport_and_supply_chain">Transport og logistikk</option>
-        <option value="agriculture_and_food">Landbruk og mat</option>
-        <option value="technology_and_security">Teknologi og sikkerhet</option>
-      </select>
-       
-<!-- Career cards -->
-        <div class="small-cards" id="careerCards">
-
-      </section>
+  <!-- Hero-->
+  <section class="hero">
+    <img src="images/hero.png" alt="" />
+    <div class="hero-content">
+      <h1>Hva vil du bli?</h1>
+      <form class="search">
+        <input id="searchInput" type="text" placeholder="Søk karriere..." />
+      </form>
     </div>
+  </section>
 
-    <!-- Footer-->
+  <div class="container">
 
-    <footer>
-      <img class="logo" src="images/logo.png" alt="" />
-      <p>
-        Samarbeid mellom de største universitetene i Norge. (Oslo, Bergen,
-        Trondheim, og Tromsø)
-      </p>
-    </footer>
-    <script src="js/listingpage.js"></script>
-  </body>
+    <!-- Finn din karrierevei-->
+    <section class="karrierer" id="karrierer-section">
+      <h1>Finn din karrierevei</h1>
+      <button id="filterButton" type="button">Filter</button>
+      <div id="filterContainer" class="hidden">
+        <select id="filterLevel">
+          <option value="">Alle nivåer</option>
+          <option value="bachelor">Bachelor</option>
+          <option value="master">Master</option>
+          <option value="vocational_certificate">Fagbrev</option>
+        </select>
+
+
+        <select id="filterFamily">
+          <option value="">Alle fagområder</option>
+          <option value="technology_and_design">Teknologi og design</option>
+          <option value="economy_and_administration">Økonomi og administrasjon"</option>
+          <option value="education_and_pedagogy">Utdanning og pedagogikk</option>
+          <option value="building_and_construction">Bygg og anlegg</option>
+          <option value="service_and_creative_fields">Service og kreative fag</option>
+          <option value="data_and_ai">Data og AI</option>
+          <option value="education">Utdanning</option>
+          <option value="engineering_and_construction">Ingeniørfag og bygg</option>
+          <option value="technology">Teknologi</option>
+          <option value="healthcare">Helse</option>
+          <option value="engineering">Ingeniørfag</option>
+          <option value="finance">Finans</option>
+          <option value="business_and_media">Forretning og media</option>
+          <option value="construction_and_energy">Bygg og energi</option>
+          <option value="construction_and_maintenance">Bygg og vedlikehold</option>
+          <option value="construction">Bygg</option>
+          <option value="transport_and_maintenance">Transport og vedlikehold</option>
+          <option value="hospitality_and_food">Hotell og mat</option>
+          <option value="industry_and_fabrication">Industri og produksjon</option>
+          <option value="transport_and_supply_chain">Transport og logistikk</option>
+          <option value="agriculture_and_food">Landbruk og mat</option>
+          <option value="technology_and_security">Teknologi og sikkerhet</option>
+        </select>
+      </div>
+      <!-- Career cards -->
+      <div class="small-cards" id="careerCards">
+
+    </section>
+  </div>
+
+  <!-- Footer-->
+
+  <footer>
+    <img class="logo" src="images/logo.png" alt="" />
+    <p>
+      Samarbeid mellom de største universitetene i Norge. (Oslo, Bergen,
+      Trondheim, og Tromsø)
+    </p>
+  </footer>
+  <script src="js/listingpage.js"></script>
+</body>
+
 </html>
