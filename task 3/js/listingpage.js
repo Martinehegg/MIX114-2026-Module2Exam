@@ -1,19 +1,43 @@
 
 //Hero
-// Search bar in hero section
+// Search bar in hero section + filter button
 
 const searchInput = document.getElementById('searchInput');
+const filterLevel = document.getElementById('filterLevel');
+const filterFamily = document.getElementById('filterFamily');
 
-searchInput.addEventListener('input',() => {
-  const searchValue = searchInput.value.toLowerCase();
+function applyFilters() {
+  
+    const searchValue = searchInput.value.toLowerCase();
+    const selectedLevel = filterLevel.value;
+    const selectedFamily = filterFamily.value;
 
-  const filteredCareers = allCareers.filter(career => {
-    const translatedTitle = translateTitle(career.id, career.title).toLowerCase();
+    // Searchbar
+    const filteredCareers = allCareers.filter(career => {
+      const translatedTitle = translateTitle(career.id, career.title).toLowerCase();
+      
+      const matchesSearch = translatedTitle.includes(searchValue); // Check if the translated title includes the search value
+    
+    // FilterLevel button
+    const matchesLevel = 
+      selectedLevel === '' || // If no level is selected, include all careers
+      career.education_options.some(option => option.level === selectedLevel); // Check if any education option matches the selected level
 
-    return translatedTitle.includes(searchValue);
+
+    // FilterFamily button
+    const matchesFamily =
+      selectedFamily === "" ||
+      career.profession_family === selectedFamily;
+
+      return matchesSearch && matchesLevel && matchesFamily; // Include career only if it matches both search and filter criteria
+
   });
-  renderCareerCards(filteredCareers);
-})
+    renderCareerCards(filteredCareers);
+  }
+
+  searchInput.addEventListener('input', applyFilters);
+  filterLevel.addEventListener('change', applyFilters);
+  filterFamily.addEventListener('change', applyFilters);
 
 
 //Translating from english to norwegian

@@ -40,178 +40,50 @@
     </section>
 
     <div class="container">
-      <!-- Mest besøkte-->
-      <section>
-        <!-- <h1>Mest besøkte karrieresider</h1> -->
-        <div class="mestbesokte">
-          <div class="bigcard">
-            <img src="images/spesped.png" alt="" />
-            <h3>Spesialpedagogikk</h3>
-            <p>
-              Spesialpedagoger arbeider med tilpasset opplæring og inkluderende
-              læringsmiljø for barn og unge med ulike behov. Yrket kombinerer
-              kartlegging, tiltak og tett samarbeid med lærere og foresatte.
-            </p>
-            <p>
-              Bachelor/master <br />
-              Utdanning og pedagogikk
-            </p>
-          </div>
-
-          <div class="bigcard">
-            <img src="images/elektriker.png" alt="" />
-            <h3>Elektriker</h3>
-            <p>
-              Elektrikere installerer og vedlikeholder elektriske anlegg i
-              boliger, næringsbygg og industri. Yrket kombinerer teknisk
-              forståelse, sikkerhet og praktisk problemløsning.
-            </p>
-            <p>
-              Fagbrev <br />
-              Bygg og elektroteknikk
-            </p>
-          </div>
-
-          <div class="bigcard">
-            <img src="images/økonomi.png" alt="" />
-            <h3>Siviløkonom</h3>
-            <p>
-              Siviløkonomer arbeider med økonomistyring, strategi og ledelse i
-              privat og offentlig sektor. Utdanningen gir sterke analytiske
-              ferdigheter innen finans og forretningsutvikling.
-            </p>
-            <p>
-              Master <br />
-              Økonomi og administrasjon
-            </p>
-          </div>
-        </div>
-      </section>
 
       <!-- Finn din karrierevei-->
       <section class="karrierer" id="karrierer-section">
         <h1>Finn din karrierevei</h1>
-        <a href="listingpage-overlay.html#filterseksjon"
-          ><button id="filterbutton">
-            Filter
-            <img id="icon" src="images/icons/Filter-icon.png" alt="" /></button
-        ></a>
+    
+    <select id="filterLevel">
+        <option value="">Alle nivåer</option>
+        <option value="bachelor">Bachelor</option>
+        <option value="master">Master</option>
+        <option value="vocational_certificate">Fagbrev</option>
+    </select>
+
+    <select id="filterFamily">
+        <option value="">Alle fagområder</option>
+        <option value="technology_and_design">Teknologi og design</option>
+        <option value="economy_and_administration">Økonomi og administrasjon"</option>
+        <option value="education_and_pedagogy">Utdanning og pedagogikk</option>
+        <option value="building_and_construction">Bygg og anlegg</option>
+        <option value="service_and_creative_fields">Service og kreative fag</option>
+        <option value="data_and_ai">Data og AI</option>
+        <option value="education">Utdanning</option>
+        <option value="engineering_and_construction">Ingeniørfag og bygg</option>
+        <option value="technology">Teknologi</option>
+        <option value="healthcare">Helse</option>
+        <option value="engineering">Ingeniørfag</option>
+        <option value="finance">Finans</option>
+        <option value="business_and_media">Forretning og media</option>
+        <option value="construction_and_energy">Bygg og energi</option>
+        <option value="construction_and_maintenance">Bygg og vedlikehold</option>
+        <option value="construction">Bygg</option>
+        <option value="transport_and_maintenance">Transport og vedlikehold</option>
+        <option value="hospitality_and_food">Hotell og mat</option>
+        <option value="industry_and_fabrication">Industri og produksjon</option>
+        <option value="transport_and_supply_chain">Transport og logistikk</option>
+        <option value="agriculture_and_food">Landbruk og mat</option>
+        <option value="technology_and_security">Teknologi og sikkerhet</option>
+      </select>
+       
+<!-- Career cards -->
         <div class="small-cards" id="careerCards">
-          <div class="smallcard">
-            <img src="images/biolog.png" alt="" />
-            <h3>Biolog</h3>
-            <p>
-              Biologer studerer levende organismer og økosystemer, og arbeider
-              innen forskning, miljøforvaltning og bioteknologi. Yrket
-              kombinerer analyse, feltarbeid og laboratoriearbeid.
-            </p>
-            <p>
-              Bachelor/master <br />
-              Naturvitenskap og miljø
-            </p>
-          </div>
 
-          <div class="smallcard">
-            <img src="images/tømrer.png" alt="" />
-            <h3>Tømrer</h3>
-            <p>
-              Tømrere bygger, monterer og rehabiliterer konstruksjoner i tre og
-              andre materialer. Yrket krever presisjon, teknisk forståelse og
-              praktisk kompetanse.
-            </p>
-            <p>
-              Fagbrev <br />
-              Bygg og anlegg
-            </p>
-          </div>
-
-          <div class="smallcard">
-            <img src="images/ux.png" alt="" />
-            <h3>UX/UI designer</h3>
-            <p>
-              UX/UI-designere utvikler digitale løsninger som er brukervennlige
-              og intuitive. Yrket kombinerer teknologi, psykologi og visuell
-              design for å forbedre digitale tjenester.
-            </p>
-            <p>
-              Bachelor <br />
-              Teknologi og design
-            </p>
-          </div>
-
-          <div class="smallcard">
-            <img src="images/frisor.png" alt="" />
-            <h3>Frisør</h3>
-            <p>
-              Frisører arbeider med hårdesign, styling og kundebehandling. Yrket
-              kombinerer kreativitet, håndverk og kommunikasjon.
-            </p>
-            <p>
-              Fagbrev <br />
-              Service og kreative fag
-            </p>
-          </div>
-
-          <div class="smallcard">
-            <img src="images/elektriker.png" alt="" />
-            <h3>Elektriker</h3>
-            <p>
-              Elektrikere installerer og vedlikeholder elektriske anlegg i
-              boliger, næringsbygg og industri. Yrket kombinerer teknisk
-              forståelse, sikkerhet og praktisk problemløsning.
-            </p>
-            <p>
-              Fagbrev <br />
-              Bygg og elektronikk
-            </p>
-          </div>
-
-          <div class="smallcard">
-            <img src="images/spesped.png" alt="" />
-            <h3>Spesialpedagogikk</h3>
-            <p>
-              Spesialpedagoger arbeider med tilpasset opplæring og inkluderende
-              læringsmiljø for barn og unge med ulike behov. Yrket kombinerer
-              kartlegging, tiltak og tett samarbeid med lærere og foresatte.
-            </p>
-            <p>
-              Bachelor/master <br />
-              Utdanning og pedagogikk
-            </p>
-          </div>
-
-          <div class="smallcard">
-            <img src="images/helsefag.png" alt="" />
-            <h3>Helsefagarbeider</h3>
-            <p>
-              Helsefagarbeidere gir praktisk pleie og omsorg til pasienter og
-              brukere i sykehjem, hjemmetjeneste og institusjoner. Yrket krever
-              gode samarbeidsevner og omsorgskompetanse.
-            </p>
-            <p>
-              Fagbrev <br />
-              Helse- og omsorg
-            </p>
-          </div>
-
-          <div class="smallcard">
-            <img src="images/økonomi.png" alt="" />
-            <h3>Siviløkonom</h3>
-            <p>
-              Siviløkonomer arbeider med økonomistyring, strategi og ledelse i
-              privat og offentlig sektor. Utdanningen gir sterke analytiske
-              ferdigheter innen finans og forretningsutvikling.
-            </p>
-            <p>
-              Master <br />
-              Økonomi og administrasjon
-            </p>
-          </div>
-        </div>
-        <!--             <button id="flerekarrierer">Se flere karrierer her...</button>
- -->
       </section>
     </div>
+
     <!-- Footer-->
 
     <footer>
