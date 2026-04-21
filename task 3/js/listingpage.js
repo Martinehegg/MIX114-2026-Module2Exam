@@ -2,6 +2,12 @@
 //Hero
 // Search bar in hero section + filter button
 
+const filterBtn = document.getElementById('filterButton');
+const filterMenu = document.getElementById('filterContainer');
+filterBtn.addEventListener('click', () => {
+  filterMenu.classList.toggle('show'); // Toggle the 'show' class to display or hide the filter menu
+});
+
 const searchInput = document.getElementById('searchInput');
 const filterLevel = document.getElementById('filterLevel');
 const filterFamily = document.getElementById('filterFamily');
@@ -197,8 +203,7 @@ function renderCareerCards(careers) {
       <img src="${imageSrc}" alt="${career.title}">
       <h3>${title}</h3>
       <p>${tags}</p>
-      <p>${educationLevels} </p>
-      <p> ${professionFamily} </p>
+      <p>${educationLevels} <br> ${professionFamily} </p>
       <button type="button" class="details-btn" data-id="${career.id}">
         Se detaljer
       </button>

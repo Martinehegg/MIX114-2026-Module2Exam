@@ -75,6 +75,36 @@ header button {
 }
 
 
+#career1, #career2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #f79331;
+    padding: 0.5rem 2rem;
+    border-radius: 1.5rem;
+
+}
+
+#compareBtn{
+    background-color: #f79331;
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    border: 1px solid #f79331;
+}
+
+#compareBtn:hover {
+    transform: scale(1.05);
+}
+
+#compareBtn:active {
+    transform: scale(0.95);
+}
+
 #careerSelect {
     display: flex;
     justify-content: center;
