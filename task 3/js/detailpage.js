@@ -19,33 +19,30 @@ function translateEducationLevel(level) {
 
 function translateProfessionFamily(family) {
     const families = {
-        technology_and_design: "Teknologi og design",
-        health_and_care: "Helse og omsorg",
-        economy_and_administration: "Økonomi og administrasjon",
-        education_and_pedagogy: "Utdanning og pedagogikk",
-        building_and_construction: "Bygg og anlegg",
-        service_and_creative_fields: "Service og kreative fag",
-        data_and_ai: "Data og AI",
-        education: "Utdanning",
-        engineering_and_construction: "Ingeniørfag og bygg",
-        technology: "Teknologi",
-        healthcare: "Helse",
-        engineering: "Ingeniørfag",
-        finance: "Finans",
-        business_and_media: "Forretning og media",
-        construction_and_energy: "Bygg og energi",
-        construction_and_maintenance: "Bygg og vedlikehold",
-        construction: "Bygg",
-        transport_and_maintenance: "Transport og vedlikehold",
-        hospitality_and_food: "Hotell og mat",
-        industry_and_fabrication: "Industri og produksjon",
-        transport_and_supply_chain: "Transport og logistikk",
-        agriculture_and_food: "Landbruk og mat",
-        technology_and_security: "Teknologi og sikkerhet",
+      technology_and_design: "Teknologi og design",
+      technology: "Teknologi og design",
+      technology_and_security: "Teknologi og design",
+      technology: "Teknologi og design",
+      data_and_ai: "Teknologi og design",
+      health_and_care: "Helse og omsorg",
+      healthcare: "Helse og omsorg",
+      education: "Utdanning",
+      engineering_and_construction: "Ingeniørfag",
+      engineering: "Ingeniørfag",
+      finance: "Finans",
+      business_and_media: "Forretning og media",
+      construction_and_energy: "Bygg og anlegg",
+      construction_and_maintenance: "Bygg og anlegg",
+      construction: "Bygg og anlegg",
+      transport_and_supply_chain: "Transport",
+      transport_and_maintenance: "Transport",
+      hospitality_and_food: "Hotell og mat",
+      industry_and_fabrication: "Industri og produksjon",
+      agriculture_and_food: "Landbruk og mat",
     };
-
+  
     return families[family] || family.replaceAll("_", " ");
-}
+  }
 
 function translateTitle(id, fallbackTitle) {
     const titles = {

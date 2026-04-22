@@ -25,15 +25,16 @@ function applyFilters() {
       const matchesSearch = translatedTitle.includes(searchValue); // Check if the translated title includes the search value
     
     // FilterLevel button
-    const matchesLevel = 
-      selectedLevel === '' || // If no level is selected, include all careers
-      career.education_options.some(option => option.level === selectedLevel); // Check if any education option matches the selected level
-
+    const matchesLevel =
+      selectedLevel === '' ||
+      career.education_options.some(
+        option => translateEducationLevel(option.level) === selectedLevel
+  );
 
     // FilterFamily button
     const matchesFamily =
-      selectedFamily === "" ||
-      career.profession_family === selectedFamily;
+    selectedFamily === "" ||
+    translateProfessionFamily(career.profession_family) === selectedFamily;
 
       return matchesSearch && matchesLevel && matchesFamily; // Include career only if it matches both search and filter criteria
 
@@ -52,6 +53,7 @@ function translateEducationLevel(level) {
   const levels = {
     bachelor: "Bachelor",
     master: "Master",
+    professional_degree: "Profesjonsutdanning",
     vocational_certificate: "Fagbrev",
     certificate: "Fagbrev"
   };
@@ -62,28 +64,24 @@ function translateEducationLevel(level) {
 function translateProfessionFamily(family) {
   const families = {
     technology_and_design: "Teknologi og design",
+    technology: "Teknologi og design",
+    technology_and_security: "Teknologi og design",
+    data_and_ai: "Teknologi og design",
     health_and_care: "Helse og omsorg",
-    economy_and_administration: "Økonomi og administrasjon",
-    education_and_pedagogy: "Utdanning og pedagogikk",
-    building_and_construction: "Bygg og anlegg",
-    service_and_creative_fields: "Service og kreative fag",
-    data_and_ai: "Data og AI",
+    healthcare: "Helse og omsorg",
     education: "Utdanning",
-    engineering_and_construction: "Ingeniørfag og bygg",
-    technology: "Teknologi",
-    healthcare: "Helse",
+    engineering_and_construction: "Ingeniørfag",
     engineering: "Ingeniørfag",
     finance: "Finans",
     business_and_media: "Forretning og media",
-    construction_and_energy: "Bygg og energi",
-    construction_and_maintenance: "Bygg og vedlikehold",
-    construction: "Bygg",
-    transport_and_maintenance: "Transport og vedlikehold",
+    construction_and_energy: "Bygg og anlegg",
+    construction_and_maintenance: "Bygg og anlegg",
+    construction: "Bygg og anlegg",
+    transport_and_supply_chain: "Transport",
+    transport_and_maintenance: "Transport",
     hospitality_and_food: "Hotell og mat",
     industry_and_fabrication: "Industri og produksjon",
-    transport_and_supply_chain: "Transport og logistikk",
     agriculture_and_food: "Landbruk og mat",
-    technology_and_security: "Teknologi og sikkerhet",
   };
 
   return families[family] || family.replaceAll("_", " ");
@@ -145,6 +143,50 @@ const careerCards = document.getElementById("careerCards");
 
 let allCareers = [];
 
+function populateFamilyFilter() {
+  const families = [];
+
+  allCareers.forEach(career => {
+    const family = translateProfessionFamily(career.profession_family);
+
+    if (!families.includes(family)) {
+      families.push(family);
+    }
+  });
+
+  filterFamily.innerHTML = `<option value="">Alle fagområder</option>`;
+
+  families.forEach(family => {
+    const option = document.createElement("option");
+    option.value = family;
+    option.textContent = family;
+    filterFamily.appendChild(option);
+  });
+}
+
+  function populateLevelFilter() {
+    const levels = [];
+  
+    allCareers.forEach(career => {
+      career.education_options.forEach(option => {
+        const level = translateEducationLevel(option.level);
+  
+        if (!levels.includes(level)) {
+          levels.push(level);
+        }
+      });
+    });
+  
+    filterLevel.innerHTML = `<option value="">Alle nivåer</option>`;
+  
+    levels.forEach(level => {
+      const option = document.createElement("option");
+      option.value = level;
+      option.textContent = level;
+      filterLevel.appendChild(option);
+    });
+  }
+  
 async function fetchAllData() {
   try {
     const response = await fetch("https://api.npoint.io/50c59220b5f6b049d324");
@@ -157,10 +199,11 @@ async function fetchAllData() {
         ...data.career_paths[careerId]
       };
     });
-
+    
     console.log('All careers', allCareers);
+    populateLevelFilter();
+    populateFamilyFilter();
     renderCareerCards(allCareers);
-
   } catch (error) {
     console.error("Could not fetch data:", error);
   }
