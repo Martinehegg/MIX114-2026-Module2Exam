@@ -11,6 +11,7 @@ function translateEducationLevel(level) {
         bachelor: "Bachelor",
         master: "Master",
         vocational_certificate: "Fagbrev",
+        professional_degree: "Profesjonsutdanning",
         certificate: "Fagbrev"
     };
 
