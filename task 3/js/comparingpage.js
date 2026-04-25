@@ -2,6 +2,7 @@
 let allCareers = [];
 
 // Translating functions
+// I chose to translate de majority of the data from the API to Norwegian, however, some of the data where so specific that I thought it would be better to keep it in English (like the career descriptions and tags). I also wanted to keep the original API data.
 function translateEducationLevel(level) {
     const levels = {
         bachelor: "Bachelor",
